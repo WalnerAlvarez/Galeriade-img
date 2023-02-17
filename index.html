@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Desarrollo web">
+    <!-- AUTHOR -->
+    <meta name="author" content="Carlos Walner">
+    <title>Pin</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <h1 class="h1">Galeria</h1>
+    <div class="grid-container">
+        <img class="grid-item" src="fotos/cascada.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje1.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje10.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje11.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje13.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje3.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje4.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje5.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje6.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje7.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/paisaje9.jpg" width="230" height="340" />
+        <img class="grid-item" src="fotos/cascada.jpg" width="230" height="340" />
+    </div>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+        var elem = document.querySelector(".grid-container");
+        var msnry = new Masonry(elem, {
+            // options
+            itemSelector: ".grid-item",
+            columnWidth: 230,
+            gutter: 20,
+            isFitWidth: true
+        });
+    </script>
+</body>
+
+</html>
